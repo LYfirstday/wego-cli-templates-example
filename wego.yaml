@@ -1,0 +1,29 @@
+components:
+  -
+    name: ProductCategorySelector
+    description: 商品分类选择器组件
+    dependencies: []
+  -
+    name: ShipmentSettingModal
+    description: 发货物流弹框组件
+    dependencies: []
+  -
+    name: ProductBaseInfoForm
+    description: 创建商品基本信息表单组件
+    dependencies: [ProductCategorySelector]
+pages:
+  -
+    name: product-list
+    description: 商品列表页面
+    dependencies: [ShipmentSettingModal]
+  -
+    name: create-product
+    description: 创建商品表单页面
+    dependencies: [ProductBaseInfoForm]
+projects:
+  -
+    name: react-central-web-app
+    description: react 管理端前端工程模板
+  -
+    name: next-h5-app
+    description: next SSR h5前端工程模板
