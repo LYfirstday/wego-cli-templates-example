@@ -11,6 +11,10 @@ components:
     name: ProductBaseInfoForm
     description: 创建商品基本信息表单组件
     dependencies: [ProductCategorySelector]
+  -
+    name: MultiLevelComponents
+    description: 多级依赖关系组件
+    dependencies: [ProductBaseInfoForm]
 pages:
   -
     name: product-list
@@ -20,6 +24,10 @@ pages:
     name: create-product
     description: 创建商品表单页面
     dependencies: [ProductBaseInfoForm]
+  -
+    name: multi-level-dependencies-page
+    description: 多级依赖关系页面
+    dependencies: [MultiLevelComponents]
 projects:
   -
     name: react-central-web-app
@@ -27,3 +35,6 @@ projects:
   -
     name: next-h5-app
     description: next SSR h5前端工程模板
+  -
+    name: vue-app
+    description: vue h5前端工程模板
